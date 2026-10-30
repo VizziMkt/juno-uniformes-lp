@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T5GP8TN5');</script>
+<!-- End Google Tag Manager -->
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JUNO | Sistema de gestão para confecções de uniformes</title>
 <meta name="description" content="Organize orçamentos, pedidos, tamanhos e produção de uniformes em um só lugar. Conheça a JUNO, sistema de gestão para confecções sob encomenda.">
@@ -23,6 +30,10 @@
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5GP8TN5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <header class="top"><div class="wrap nav"><a class="logo" href="#inicio" aria-label="JUNO, início">juno<i>.</i></a><nav aria-label="Navegação principal"><a class="navlink" href="#como-funciona">Como funciona</a><a class="navlink" href="#personalizacao">Personalização</a><a class="btn small" href="#demonstracao">Agendar demonstração <span aria-hidden="true">↗</span></a></nav></div></header>
 <main>
 <section class="hero" id="inicio"><div class="wrap"><div class="hero-grid"><div><p class="eyebrow">Gestão para confecções de uniformes</p><h1>Do orçamento<br>à produção.<br><span>Tudo no seu<br>controle.</span></h1><p class="intro">Tamanhos, quantidades e personalizações organizados em um só lugar. Sua confecção ganha clareza para produzir, sem depender de informações espalhadas.</p><a class="btn" href="#demonstracao">Agendar demonstração <span class="arr" aria-hidden="true">↗</span></a><p class="micro">Conheça a JUNO com quem entende a rotina do produto.</p></div>
@@ -96,6 +107,8 @@ form.addEventListener('submit', async (event) => {
     if (!response.ok || data.error || data.success === false) throw new Error('Envio não confirmado');
     form.reset();
     showStatus('Solicitação enviada! A equipe da JUNO entrará em contato para agendar sua demonstração.', false);
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'form_submit_success' });
   } catch (error) {
     showStatus('Não foi possível enviar agora. Confira sua conexão e tente novamente.', true);
   } finally {
